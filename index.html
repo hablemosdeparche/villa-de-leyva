@@ -84,7 +84,7 @@ body::before {
 }
 .search-box input::placeholder { color: var(--muted); }
 .search-box input:focus { border-color: var(--gold); }
-.search-box::before { content: '??'; position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 13px; pointer-events: none; }
+.search-box::before { content: '\f002'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 13px; pointer-events: none; }
 .cats-scroll { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
 .cats-scroll::-webkit-scrollbar { display: none; }
 .cat-pill {
@@ -256,7 +256,7 @@ body::before {
 .saved-empty p { font-size: 13px; line-height: 1.6; }
 
 /* ----------------------------------
-   MODAL ï¿½ todo en una pantalla
+   MODAL ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½ todo en una pantalla
 ---------------------------------- */
 .overlay {
   position: fixed; inset: 0;
@@ -478,7 +478,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-top">
       <div class="logo">
         <h1>Villa de Leyva Local</h1>
-        <p>Lo que hacen los de aquï¿½</p>
+        <p>Lo que hacen los de aquÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½</p>
       </div>
     </div>
     <div class="search-box">
@@ -486,12 +486,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="cats-scroll">
       <div class="cat-pill active" onclick="setFilter('todos',this)">Todos</div>
-      <div class="cat-pill" onclick="setFilter('bares',this)">?? Bares</div>
-      <div class="cat-pill" onclick="setFilter('cafe',this)">? Cafï¿½s</div>
-      <div class="cat-pill" onclick="setFilter('comida',this)">?? Comida</div>
-      <div class="cat-pill" onclick="setFilter('plan',this)">?? Planes</div>
-      <div class="cat-pill" onclick="setFilter('arte',this)">?? Arte</div>
-      <div class="cat-pill" onclick="setFilter('noche',this)">?? Noche</div>
+      <div class="cat-pill" onclick="setFilter('bares',this)"><i class="fa-solid fa-martini-glass-citrus"></i> Bares</div>
+      <div class="cat-pill" onclick="setFilter('cafe',this)">? CafÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½s</div>
+      <div class="cat-pill" onclick="setFilter('comida',this)"><i class="fa-solid fa-utensils"></i> Comida</div>
+      <div class="cat-pill" onclick="setFilter('plan',this)"><i class="fa-solid fa-calendar-check"></i> Planes</div>
+      <div class="cat-pill" onclick="setFilter('arte',this)"><i class="fa-solid fa-palette"></i> Arte</div>
+      <div class="cat-pill" onclick="setFilter('noche',this)"><i class="fa-solid fa-moon"></i> Noche</div>
     </div>
   </div>
 
@@ -499,9 +499,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="screen active" id="screen-inicio">
     <div class="banner" id="banner-eventos">
       <div class="banner-header" onclick="toggleBanner()">
-        <div class="banner-flame">??</div>
+        <div class="banner-flame"><i class="fa-solid fa-fire"></i></div>
         <div class="banner-texto">
-          <h3>ï¿½Quï¿½ hacer esta noche?</h3>
+          <h3>ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½QuÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½ hacer esta noche?</h3>
           <p>Eventos programados para el mes</p>
         </div>
         <div class="banner-arrow">?</div>
@@ -509,7 +509,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="banner-body">
         <div id="banner-events-list"></div>
         <div class="banner-cta">
-          <button class="btn-ver-eventos" onclick="goScreen('screen-eventos')">Ver todos los eventos del aï¿½o ?</button>
+          <button class="btn-ver-eventos" onclick="goScreen('screen-eventos')">Ver todos los eventos del aÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½o ?</button>
         </div>
       </div>
     </div>
@@ -521,7 +521,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="screen" id="screen-eventos">
     <div class="events-screen-header">
       <h2>Agenda</h2>
-      <p>Prï¿½ximos eventos en Villa de Leyva</p>
+      <p>PrÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½ximos eventos en Villa de Leyva</p>
     </div>
       <div class="events-feed" id="events-feed"></div>
   </div>
@@ -550,7 +550,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- BOTON REGISTRO -->
 <div class="wa-float">
   <a class="wa-btn" href="https://hablemosdeparche.github.io/elparche-admin/admintaller/" style="text-decoration:none;">
-    <span class="wa-btn-icon">??</span>
+    <span class="wa-btn-icon"><i class="fa-solid fa-store"></i></span>
     <span class="wa-btn-text">Registra tu local</span>
   </a>
 </div>
@@ -577,7 +577,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div id="modal-info"></div>
       <div id="modal-menu"></div>
       <div class="modal-cta">
-        <button class="btn-primary" id="btn-como-llegar"><i class="fa-solid fa-location-dot"></i> Cï¿½mo llegar</button>
+        <button class="btn-primary" id="btn-como-llegar"><i class="fa-solid fa-location-dot"></i> CÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½mo llegar</button>
         <button class="btn-icon" id="btn-modal-heart" onclick="toggleSaveFromModal()"><i class="fa-regular fa-heart"></i></button>
         <button class="btn-icon" onclick="sharePlace()"><i class="fa-solid fa-share-from-square"></i></button>
       </div>
@@ -687,11 +687,11 @@ const places = [
 // EVENTOS
 // --------------------------------------
 const eventList = [
-  { date:'2026-07-15', endDate:'2026-07-18', cat:'arte', icon:'??', name:'Festival de la Luz', nit:'', place:'Centro', price:'Entrada libre', short:'15-18 de julio' },
-  { date:'2026-08-20', endDate:'2026-08-22', cat:'arte', icon:'??', name:'Festival de Musica Colonial', nit:'', place:'Plaza Mayor', price:'Entrada libre', short:'20-22 de agosto' },
-  { date:'2026-09-10', endDate:'2026-09-12', cat:'comida', icon:'??', name:'Festival Gastronomico Colonial', nit:'', place:'Centro', price:'Variable', short:'10-12 de septiembre' },
-  { date:'2026-10-05', endDate:'2026-10-07', cat:'arte', icon:'??', name:'Festival de Cine de Villa de Leyva', nit:'', place:'Centro', price:'Desde $15.000', short:'5-7 de octubre' },
-  { date:'2026-07-20', endDate:'2026-07-22', cat:'arte', icon:'??', name:'Festival de Teatro de Villa', nit:'', place:'Centro', price:'Desde .000', short:'20-22 de julio' },
+  { date:'2026-07-15', endDate:'2026-07-18', cat:'arte', icon:'', name:'Festival de la Luz', nit:'', place:'Centro', price:'Entrada libre', short:'15-18 de julio' },
+  { date:'2026-08-20', endDate:'2026-08-22', cat:'arte', icon:'', name:'Festival de Musica Colonial', nit:'', place:'Plaza Mayor', price:'Entrada libre', short:'20-22 de agosto' },
+  { date:'2026-09-10', endDate:'2026-09-12', cat:'comida', icon:'', name:'Festival Gastronomico Colonial', nit:'', place:'Centro', price:'Variable', short:'10-12 de septiembre' },
+  { date:'2026-10-05', endDate:'2026-10-07', cat:'arte', icon:'', name:'Festival de Cine de Villa de Leyva', nit:'', place:'Centro', price:'Desde $15.000', short:'5-7 de octubre' },
+  { date:'2026-07-20', endDate:'2026-07-22', cat:'arte', icon:'', name:'Festival de Teatro de Villa', nit:'', place:'Centro', price:'Desde .000', short:'20-22 de julio' },
 ];
 
 function getUpcomingEvents() {
@@ -705,6 +705,12 @@ function getUpcomingEvents() {
 const etClasses = ['et1','et2','et3','et4','et5'];
 const meses = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
 
+
+
+function getEventIcon(cat) {
+  const map = { bares:'<i class="fa-solid fa-martini-glass-citrus"></i>', cafe:'<i class="fa-solid fa-mug-saucer"></i>', comida:'<i class="fa-solid fa-utensils"></i>', arte:'<i class="fa-solid fa-palette"></i>', plan:'<i class="fa-solid fa-calendar-check"></i>', noche:'<i class="fa-solid fa-moon"></i>', cultural:'<i class="fa-solid fa-masks-theater"></i>' };
+  return map[cat] || '<i class="fa-regular fa-star"></i>';
+}
 function renderEventsList(list) {
   const feed = document.getElementById('events-feed');
   feed.innerHTML = '';
@@ -717,14 +723,14 @@ function renderEventsList(list) {
       <div class="ev-thumb-full ${etClasses[i % 5]}">${e.icon}<div class="ev-badge-full dia">${meses[m]}</div></div>
       <div class="ev-info-full">
         <h3>${e.name}</h3>
-        <div class="ev-detail-row"><span>??</span> ${e.short}</div>
-        <div class="ev-detail-row"><span>??</span> ${e.place}</div>
-        <div class="ev-detail-row"><span>??</span> ${e.price}</div>
+        <div class="ev-detail-row"><span><i class="fa-regular fa-calendar"></i></span> ${e.short}</div>
+        <div class="ev-detail-row"><span><i class="fa-solid fa-location-dot"></i></span> ${e.place}</div>
+        <div class="ev-detail-row"><span><i class="fa-solid fa-tag"></i></span> ${e.price}</div>
       </div>`;
     feed.appendChild(card);
   });
   if (list.length === 0) {
-    feed.innerHTML = '<div style="text-align:center;padding:40px;color:var(--muted);font-size:14px;">No hay eventos prï¿½ximos.</div>';
+    feed.innerHTML = '<div style="text-align:center;padding:40px;color:var(--muted);font-size:14px;">No hay eventos prÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½ximos.</div>';
   }
 }
 
@@ -737,7 +743,7 @@ function renderBannerEvents() {
     const item = document.createElement('div');
     item.className = 'banner-event-item';
     item.dataset.cat = e.cat;
-    item.innerHTML = `<div class="bev-icon">${e.icon}</div><div class="bev-info"><h5>${e.name}</h5><p>${e.short} ï¿½ ${e.price}</p></div>`;
+    item.innerHTML = `<div class="bev-icon">${e.icon}</div><div class="bev-info"><h5>${e.name}</h5><p>${e.short} ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½ ${e.price}</p></div>`;
     container.appendChild(item);
   });
 }
@@ -755,7 +761,7 @@ let mapInitialized = false;
 let mapFocusPlace = null;
 
 // --------------------------------------
-// NAVEGACIï¿½N
+// NAVEGACIÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½N
 // --------------------------------------
 function goScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -826,7 +832,7 @@ function makePlaceCard(p, i) {
     <div class="place-info">
       <h3>${p.name}</h3>
       <div class="place-tags">${p.tags.map(t=>`<span class="p-tag">${t}</span>`).join('')}</div>
-      <div class="place-barrio">?? ${p.barrio}</div>
+      <div class="place-barrio"><i class="fa-solid fa-location-dot"></i> ${p.barrio}</div>
     </div>`;
   d.addEventListener('click', e => { if(!e.target.closest('.heart-btn')) openModal(p); });
   return d;
@@ -868,7 +874,7 @@ function updateMapPins() {
       html:`<div style="background:#1C1508;border:2px solid #D4A830;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(0,0,0,0.5);"><svg viewBox="0 0 80 80" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">${getSVG(p.cat)}</svg></div>`,
       className:'', nit:'', iconSize:[36,36], iconAnchor:[18,18]
     });
-    const marker = L.marker(p.coords,{icon}).addTo(leafMap).bindPopup(`<div class="popup-name">${p.name}</div><div class="popup-barrio">?? ${p.barrio}</div>`);
+    const marker = L.marker(p.coords,{icon}).addTo(leafMap).bindPopup(`<div class="popup-name">${p.name}</div><div class="popup-barrio"><i class="fa-solid fa-location-dot"></i> ${p.barrio}</div>`);
     mapMarkers.push(marker);
   });
 }
@@ -921,14 +927,14 @@ function openModal(p) {
     <div class="detail-box"><div class="d-label">Precio</div><div class="d-val">${p.precio}</div></div>`;
 
   let infoHtml = '';
-  if (p.telefono) infoHtml += `<div class="info-line"><span>??</span> <span style="cursor:pointer;color:var(--gold);" onclick="navigator.clipboard.writeText('${p.telefono}');this.innerText='ï¿½Copiado!';">${p.telefono}</span></div>`;
-  if (p.instagram) infoHtml += `<div class="info-line"><span>??</span> <a href="https://instagram.com/${p.instagram}" target="_blank" style="color:var(--gold);text-decoration:none;">@${p.instagram}</a></div>`;
+  if (p.telefono) infoHtml += `<div class="info-line"><span><i class="fa-solid fa-phone"></i></span> <span style="cursor:pointer;color:var(--gold);" onclick="navigator.clipboard.writeText('${p.telefono}');this.innerText='ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½Copiado!';">${p.telefono}</span></div>`;
+  if (p.instagram) infoHtml += `<div class="info-line"><span><i class="fa-brands fa-instagram"></i></span> <a href="https://instagram.com/${p.instagram}" target="_blank" style="color:var(--gold);text-decoration:none;">@${p.instagram}</a></div>`;
   document.getElementById('modal-info').innerHTML = infoHtml;
 
   if (p.menu && p.menu.some(it => it)) {
     document.getElementById('modal-menu').innerHTML = `
       <div class="menu-box">
-        <div class="mb-title">Menï¿½ destacado</div>
+        <div class="mb-title">MenÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½ destacado</div>
         <ul>${p.menu.filter(it=>it).map(it=>`<li><i class="fa-regular fa-circle" style="font-size:6px;color:var(--gold);vertical-align:middle;margin-right:6px"></i>${it}</li>`).join('')}</ul>
       </div>`;
   } else {
@@ -986,7 +992,7 @@ function renderSaved() {
   const c = document.getElementById('saved-container');
   const sp = places.filter(p => saved.includes(p.id)).sort((a,b)=>(a.orden||999)-(b.orden||999));
   if(sp.length === 0) {
-    c.innerHTML = `<div class="saved-empty"><div class="saved-empty-icon"><i class="fa-regular fa-heart"></i></div><h3>Aï¿½n no tienes guardados</h3><p>Toca el corazï¿½n en cualquier lugar para guardarlo aquï¿½.</p></div>`;
+    c.innerHTML = `<div class="saved-empty"><div class="saved-empty-icon"><i class="fa-regular fa-heart"></i></div><h3>AÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½n no tienes guardados</h3><p>Toca el corazÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½n en cualquier lugar para guardarlo aquÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½.</p></div>`;
     return;
   }
   c.innerHTML = '';
@@ -1000,9 +1006,9 @@ function sharePlace() {
   if(!currentModal) return;
   const p = currentModal;
   if(navigator.share) {
-    navigator.share({title:p.name, text:`Mira este parche en Villa de Leyva Local: ${p.name} ï¿½ ${p.barrio}`, url:window.location.href});
+    navigator.share({title:p.name, text:`Mira este parche en Villa de Leyva Local: ${p.name} ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½ ${p.barrio}`, url:window.location.href});
   } else {
-    navigator.clipboard.writeText(window.location.href).then(()=>alert('ï¿½Enlace copiado!'));
+    navigator.clipboard.writeText(window.location.href).then(()=>alert('ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½Enlace copiado!'));
   }
 }
 
