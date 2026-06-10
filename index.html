@@ -916,7 +916,7 @@ function openModal(p) {
   document.getElementById('modal-title').textContent = p.name;
   document.getElementById('modal-tags').innerHTML = p.tags.map(t=>`<span class="m-tag">${t}</span>`).join('');
   document.getElementById('modal-desc').textContent = p.desc;
-  document.getElementById('modal-barrio').innerHTML = `?? ${p.barrio}`;
+  document.getElementById('modal-barrio').innerHTML = `<i class="fas fa-location-dot"></i> ${p.barrio}`;
 
   const full = Math.floor(p.rating);
   const starsHtml = Array.from({length:5},(_,i)=>`<i class="star fa${i<full?'s':'r'} fa-star ${i<full?'on':'off'}"></i>`).join('');
@@ -1022,5 +1022,6 @@ renderBannerEvents();
 </script>
 </body>
 </html>
+
 
 
